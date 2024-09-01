@@ -47,12 +47,12 @@ import { GlareCard } from '@/components/ui/glare-card';
 function NavigationFrame() {
 
     return  (
-            <nav className='nav fixed z-50 bg-background'>
+            <nav className='nav fixed z-[1000] bg-background top-0 left-0 right-0'>
                 <div className='nav-section py-[1rem] md:px-0 lg:px-[1rem] px-3 w-full'>
                     <div className="grid grid-cols-2 gap-2 mx-4 md:mx-12 xl:mx-32 2xl:mx-60 w-full">
                         <div className="flex gap-x-4">
                         <div className="inline-block">
-                            <Link href='/' className="inline-flex gap-2 mt-1.5">
+                            <Link href='/' className="inline-flex gap-2 mt-2">
                                <h1 className="font-display font-bold">lifeonmarsindica</h1> 
                             </Link>
                         </div>
@@ -131,7 +131,7 @@ function NavigationFrame() {
                             </NavigationMenu>
                         </div>
                         </div>
-                        <div className="justify-end hidden lg:inline-block">
+                        <div className="hidden justify-center lg:inline-flex">
                             <Link href="/contact">
                                 <Button>Contact Me</Button>
                             </Link>

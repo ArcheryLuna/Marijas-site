@@ -7,7 +7,7 @@ export function LandingPageHome() {
   return (
     <BackgroundBeamsWithCollision>
         <div className="h-[40rem] flex items-center justify-center">
-            <TextHoverEffect text="MARIJA" />
+            <TextHoverEffect text="LIFEONMARSINDICIA" />
         </div>
         <div className="absolute  bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-full blur-sm" />
         <div className="absolute  bottom-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-full" />

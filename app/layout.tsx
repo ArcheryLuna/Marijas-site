@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 
 import { cn } from "@/lib/utils";
 import NavigationFrame from "@/components/navbar";
+import Footer from "@/components/footer";
 
 export default function RootLayout({
   children,
@@ -28,7 +29,7 @@ export default function RootLayout({
         )}>
       <ThemeProvider
             attribute="class"
-            defaultTheme="dark"
+            defaultTheme="system"
             enableSystem
             disableTransitionOnChange
           >
@@ -37,6 +38,7 @@ export default function RootLayout({
                 {children}
             </div>
             <Toaster />
+            <Footer />
           </ThemeProvider>
         </body>
     </html>

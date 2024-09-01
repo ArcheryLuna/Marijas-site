@@ -8,6 +8,8 @@
  * http://www.adobe.com/products/eulas/tou_typekit. For font license
  * information, see the list below.
  *
+ * gigalypse:
+ *   - http://typekit.com/eulas/00000000000000007735cdc1
  * kallisto:
  *   - http://typekit.com/eulas/00000000000000007735c0b1
  *   - http://typekit.com/eulas/00000000000000007735c0b5
@@ -53,9 +55,9 @@
  *
  * © 2009-2024 Adobe Systems Incorporated. All Rights Reserved.
  */
-/*{"last_published":"2024-08-30 23:16:21 UTC"}*/
+/*{"last_published":"2024-08-31 23:27:49 UTC"}*/
 
-@import url("https://p.typekit.net/p.css?s=1&k=eab8fxa&ht=tk&f=37729.37730.37733.37734.37735.48406.48409.48412.48417.48422.48427.48428.48429.48435.48436.48437.48445.48446.48448.48451.48458.48460.48463.48467.48472.48482.48483.48485.48486.48390.48396.48398.48401&a=36957449&app=typekit&e=css");
+@import url("https://p.typekit.net/p.css?s=1&k=eab8fxa&ht=tk&f=37729.37730.37733.37734.37735.42699.48406.48409.48412.48417.48422.48427.48428.48429.48435.48436.48437.48445.48446.48448.48451.48458.48460.48463.48467.48472.48482.48483.48485.48486.48390.48396.48398.48401&a=36957449&app=typekit&e=css");
 
 @font-face {
 font-family:"kallisto";
@@ -85,6 +87,12 @@ font-display:auto;font-style:italic;font-weight:300;font-stretch:normal;
 font-family:"kallisto-lined";
 src:url("https://use.typekit.net/af/28a652/00000000000000007735c0c1/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/28a652/00000000000000007735c0c1/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/28a652/00000000000000007735c0c1/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
 font-display:auto;font-style:normal;font-weight:400;font-stretch:normal;
+}
+
+@font-face {
+font-family:"gigalypse";
+src:url("https://use.typekit.net/af/333854/00000000000000007735cdc1/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/333854/00000000000000007735cdc1/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/333854/00000000000000007735cdc1/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n8&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:800;font-stretch:normal;
 }
 
 @font-face {
@@ -257,6 +265,7 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
 
 .tk-kallisto { font-family: "kallisto",sans-serif; }
 .tk-kallisto-lined { font-family: "kallisto-lined",sans-serif; }
+.tk-gigalypse { font-family: "gigalypse",sans-serif; }
 .tk-owners-xxnarrow { font-family: "owners-xxnarrow",sans-serif; }
 .tk-owners-xnarrow { font-family: "owners-xnarrow",sans-serif; }
 .tk-owners-narrow { font-family: "owners-narrow",sans-serif; }
@@ -268,25 +277,25 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
 @layer base {
   :root {
     --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
+    --foreground: 224 71.4% 4.1%;
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
+    --card-foreground: 224 71.4% 4.1%;
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --popover-foreground: 224 71.4% 4.1%;
+    --primary: 226 94% 58%; /* indigo-500 */
+    --primary-foreground: 210 20% 98%;
+    --secondary: 220 14.3% 95.9%;
+    --secondary-foreground: 220.9 39.3% 11%;
+    --muted: 220 14.3% 95.9%;
+    --muted-foreground: 220 8.9% 46.1%;
+    --accent: 220 14.3% 95.9%;
+    --accent-foreground: 220.9 39.3% 11%;
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
-    --radius: 0.5rem;
+    --destructive-foreground: 210 20% 98%;
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 226 94% 58%; /* indigo-500 */
+    --radius: 0rem;
     --chart-1: 12 76% 61%;
     --chart-2: 173 58% 39%;
     --chart-3: 197 37% 24%;
@@ -295,25 +304,25 @@ font-display:auto;font-style:normal;font-weight:700;font-stretch:normal;
   }
 
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --background: 224 71.4% 4.1%;
+    --foreground: 210 20% 98%;
+    --card: 224 71.4% 4.1%;
+    --card-foreground: 210 20% 98%;
+    --popover: 224 71.4% 4.1%;
+    --popover-foreground: 210 20% 98%;
+    --primary: 226 85% 67%; /* indigo-300 */
+    --primary-foreground: 210 20% 98%;
+    --secondary: 215 27.9% 16.9%;
+    --secondary-foreground: 210 20% 98%;
+    --muted: 215 27.9% 16.9%;
+    --muted-foreground: 217.9 10.6% 64.9%;
+    --accent: 215 27.9% 16.9%;
+    --accent-foreground: 210 20% 98%;
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
+    --destructive-foreground: 210 20% 98%;
+    --border: 215 27.9% 16.9%;
+    --input: 215 27.9% 16.9%;
+    --ring: 226 85% 67%; /* indigo-300 */
     --chart-1: 220 70% 50%;
     --chart-2: 160 60% 45%;
     --chart-3: 30 80% 55%;

@@ -32,12 +32,12 @@ export const TextHoverEffect = ({
       ref={svgRef}
       width="100%"
       height="100%"
-      viewBox="0 0 310 100"
+      viewBox="0 0 900 300"
       xmlns="http://www.w3.org/2000/svg"
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onMouseMove={(e) => setCursor({ x: e.clientX, y: e.clientY })}
-      className="select-none"
+      className="select-none h-[70rem] w-[100vw]"
     >
       <defs>
         <linearGradient
@@ -92,7 +92,7 @@ export const TextHoverEffect = ({
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.3"
-        className="font-display font-bold dark:stroke-pink-500 stroke-pink-300 fill-transparent text-7xl  "
+        className="font-display stroke-2 font-bold stroke-primary fill-transparent text-7xl  "
         style={{ opacity: hovered ? 0.7 : 0 }}
       >
         {text}
@@ -103,7 +103,7 @@ export const TextHoverEffect = ({
         textAnchor="middle"
         dominantBaseline="middle"
         strokeWidth="0.3"
-        className="font-display font-bold fill-transparent text-7xl stroke-indigo-500 dark:stroke-indigo-300"
+        className="font-display font-bold stroke-2 fill-transparent stroke-primary text-7xl"
         initial={{ strokeDashoffset: 1000, strokeDasharray: 1000 }}
         animate={{
           strokeDashoffset: 0,
@@ -124,7 +124,7 @@ export const TextHoverEffect = ({
         stroke="url(#textGradient)"
         strokeWidth="0.3"
         mask="url(#textMask)"
-        className="font-display font-bold fill-transparent text-7xl  "
+        className="font-display font-bold stroke-2 fill-transparent text-7xl  "
       >
         {text}
       </text>
