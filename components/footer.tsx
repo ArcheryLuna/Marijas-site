@@ -11,6 +11,9 @@ import { Button } from "@/components/ui/button";
 // Icon imports
 import { Twitter, Facebook, Instagram, Youtube, Linkedin } from "lucide-react";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHeart } from "@fortawesome/pro-regular-svg-icons";
+
 // Local component imports
 import { Section, Container } from "@/components/craft"
 
@@ -25,7 +28,7 @@ export default function Footer() {
         <Container className="grid gap-12 md:grid-cols-[1.5fr_0.5fr_0.5fr]">
           <div className="not-prose flex flex-col gap-6">
             <Link href="/">
-              <h3 className="sr-only">brijr/components</h3>
+              <h3 className="sr-only">lifeonmarsindica</h3>
               <Image
                 src={Logo}
                 alt="Logo"
@@ -36,9 +39,14 @@ export default function Footer() {
             </Link>
             <p>
               <Balancer>
-                brijr/components is a collection of Next.js, React, Typescript
-                components for building landing pages and websites.
+                I am a musician that is trying to make it in the world.
+                Please support me by following me on social media.
               </Balancer>
+            </p>
+            <p>
+                <Balancer>
+                    Made with <FontAwesomeIcon icon={faHeart} className="dark:text-indigo-300 text-indigo-500" /> by <Link className="font-kallisto hover:dark:text-indigo-300 hover:text-indigo-500 hover:underline duration-300 transition-all font-bold" href="https://arcehry-luna.com">Archery Luna</Link>
+                </Balancer>
             </p>
           </div>
           <div className="flex flex-col gap-2">
@@ -76,7 +84,7 @@ export default function Footer() {
           </div>
           <p className="text-muted-foreground">
             ©{" "}
-            <a className="font-semibold underline text-indigo-500 dark:text-indigo-300" href="https://lifeonmarsindica.com">lifeonmarsindicia</a>.
+            <a className="font-semibold underline text-indigo-500 dark:text-indigo-300" href="https://lifeonmarsindica.com">lifeonmarsindica</a>.
             All rights reserved. 2024-present.
           </p>
         </Container>

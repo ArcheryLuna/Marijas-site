@@ -62,7 +62,7 @@ function NavigationFrame() {
                                     <NavigationMenuItem>
                                     <NavigationMenuTrigger>Info DUMP</NavigationMenuTrigger>
                                     <NavigationMenuContent>
-                                        <ul className="grid grid-cols-3 gap-3 p-6 md:w-[900px] lg:w-[800px]">
+                                        <ul className="grid grid-cols-4 gap-3 p-6 md:w-[900px] lg:w-[800px]">
                                             <li className="col-span-1 row-span-3">
                                                 <NavigationMenuLink asChild>
                                                     
@@ -102,17 +102,17 @@ function NavigationFrame() {
                                                     </Link>
                                                 </NavigationMenuLink>
                                             </li>
-                                            <li className="row-span-1 inline-flex gap-x-1 w-full">
+                                            <li className="row-span-1 col-span-2 inline-flex gap-x-1 w-full">
                                                 <ListItem href="/busking" title="Busking">
                                                     <p> Standing on the streets singing. </p>
                                                 </ListItem>
                                             </li>
-                                            <li className="row-span-1 inline-flex gap-x-1 w-full">
+                                            <li className="row-span-1 col-span-2 inline-flex gap-x-1 w-full">
                                                 <ListItem href="/about" title="About Me">
                                                     Who am I?
                                                 </ListItem>
                                             </li>
-                                            <li className="row-span-1 inline-flex gap-x-1 w-full">
+                                            <li className="row-span-1 col-span-2 inline-flex gap-x-1 w-full">
                                                 <ListItem href="/donations" title="Donate">
                                                     Donate to me and keep me singing.
                                                 </ListItem>

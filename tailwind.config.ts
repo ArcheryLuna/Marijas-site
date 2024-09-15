@@ -18,8 +18,9 @@ const config = {
     prefix: "",
     theme: {
         fontFamily: {
-            sans: ["owners-wide", "sans-serif"],
+            sans: ["owners-xwide", "sans-serif"],
             display: ["gigalypse", "sans-serif"],
+            "kallisto": ["kallisto", "sans-serif"],
         },
         extend: {
             boxShadow: {
